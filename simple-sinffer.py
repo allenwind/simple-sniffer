@@ -50,7 +50,7 @@ def ip_counter():
             # add bit counter
             while True:
                 time.sleep(interval)
-                os.system("cls")
+                os.system("clear")
                 for ip, count  in sorted(c.items(), key=lambda x: x[1], reverse=True):
                     print(ip, count)
         threading.Thread(target=task, args=(c, 1)).start()
